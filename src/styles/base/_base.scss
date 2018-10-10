@@ -1,0 +1,17 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+}
+
+.DateInput_input {
+    width: 108px;
+}
+
+.is-active {
+    font-weight: bold;
+    color: #666;
+}
