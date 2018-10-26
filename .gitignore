@@ -2,5 +2,11 @@ node_modules/
 
 public/dist/
 
+.env.test
+.env.development
+
 webpack.config_0*
 package_0*
+expenses_0*
+AddExpensePage_0*
+expenses.test_0*
