@@ -14,6 +14,7 @@ if (process.env.NODE_ENV === 'test') {
 module.exports = (env) => {
     const isProd = env === 'production';
     return {
+        mode: env,
         entry: './src/app.js',
         output: {
             path: path.join(__dirname, 'public', 'dist'),
