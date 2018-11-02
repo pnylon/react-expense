@@ -21,25 +21,6 @@ export class AddExpensePage extends React.Component {
     }
 }
 
-// const AddExpensedPage = (props) => (
-//     <div>
-//         <h1>Add Expense</h1>
-//         <ExpenseForm 
-//             onSubmit={(expense) => {
-//                 //props.dispatch(addExpense(expense));
-//                 props.onSubmit(expense);
-//                 props.history.push('/');
-//             }}
-//         />
-//     </div>
-// );
-
-// You can implicitly return an object inside () like below.
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         onSubmit: (expense) => dispatch(addExpense(expense))
-//     };
-// };
 const mapDispatchToProps = (dispatch) => ({
     startAddExpense: (expense) => dispatch(startAddExpense(expense))
 });
