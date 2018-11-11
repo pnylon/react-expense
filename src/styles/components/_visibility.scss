@@ -1,0 +1,10 @@
+.show-for-small {
+    @media (min-width: $desk-bp) {
+        display: none;
+    }
+}
+.show-for-large {
+    @media (max-width: $desk-bp - .01rem) {
+        display: none;
+    }
+}

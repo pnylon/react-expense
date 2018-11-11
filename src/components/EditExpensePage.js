@@ -16,41 +16,23 @@ export class EditExpensePage extends React.Component {
     render() {
         return (
         <div>
-            <ExpenseForm 
-                expense={this.props.expense}
-                onSubmit={this.onSubmit}
-            />
-            <button
-            onClick={this.onRemove}>Remove</button>
+            <div className="page-header">
+                <div className="content-container">
+                <h1 className="page-header__title">Edit Expense</h1>
+            </div>
+            </div>
+            <div className="content-container">
+                <ExpenseForm 
+                    expense={this.props.expense}
+                    onSubmit={this.onSubmit}
+                />
+                <button className="btn btn--second" onClick={this.onRemove}>Remove Expense</button>
+            </div>
         </div>
         );
     }
 }
 
-// const EditExpensePage = (props) => {
-//     return (
-//         <div>
-//             <ExpenseForm 
-//                 expense={props.expense}
-//                 onSubmit={(expense) => {
-//                     props.dispatch(editExpense(props.expense.id, expense));
-//                     props.history.push('/');
-//                 }}
-//             />
-//             <button
-//             onClick={() => {
-//                 props.dispatch(removeExpense({ id: props.expense.id }))
-//                 props.history.push('/')
-//             }}>Remove</button>
-//         </div>
-//     );
-// };
-
-// const mapStateToProps = (state, props) => {
-//     return {
-//         expense: state.expenses.find((expense) => expense.id === props.match.params.id)
-//     };
-// };
 const mapStateToProps = (state, props) => ({
     expense: state.expenses.find((expense) => expense.id === props.match.params.id)
 });

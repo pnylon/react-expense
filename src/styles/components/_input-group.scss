@@ -1,0 +1,21 @@
+.input-group {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: $m-size;
+
+    @media(min-width: $desk-bp) {
+        flex-direction: row;
+        margin-bottom: $l-size;
+    }
+
+    &__item {
+        margin-bottom: $s-size;
+
+        @media(min-width: $desk-bp) {
+            margin-right: $s-size;
+            margin:  0 $s-size 0 0;
+        }
+    }
+}
